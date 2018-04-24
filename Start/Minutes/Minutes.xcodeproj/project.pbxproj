@@ -15,6 +15,12 @@
 		D3048F40202E540100D45D7E /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3048F3F202E540100D45D7E /* EntriesTableViewController.swift */; };
 		D3AA8CFD20363C2E00222B39 /* EditEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA8CFC20363C2E00222B39 /* EditEntryViewController.swift */; };
 		D3AA8CFF2037552800222B39 /* FileEntryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA8CFE2037552800222B39 /* FileEntryStore.swift */; };
+		D3C83DDD2069A06C00500129 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C83DD72069A06C00500129 /* AppCenterAnalytics.framework */; };
+		D3C83DDE2069A06C00500129 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C83DD82069A06C00500129 /* AppCenter.framework */; };
+		D3C83DDF2069A06C00500129 /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C83DD92069A06C00500129 /* AppCenterDistribute.framework */; };
+		D3C83DE02069A06C00500129 /* AppCenterPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C83DDA2069A06C00500129 /* AppCenterPush.framework */; };
+		D3C83DE12069A06C00500129 /* AppCenterDistributeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3C83DDB2069A06C00500129 /* AppCenterDistributeResources.bundle */; };
+		D3C83DE22069A06C00500129 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C83DDC2069A06C00500129 /* AppCenterCrashes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		D3048F3F202E540100D45D7E /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
 		D3AA8CFC20363C2E00222B39 /* EditEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntryViewController.swift; sourceTree = "<group>"; };
 		D3AA8CFE2037552800222B39 /* FileEntryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEntryStore.swift; sourceTree = "<group>"; };
+		D3C83DD72069A06C00500129 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
+		D3C83DD82069A06C00500129 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
+		D3C83DD92069A06C00500129 /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterDistribute.framework; sourceTree = "<group>"; };
+		D3C83DDA2069A06C00500129 /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterPush.framework; sourceTree = "<group>"; };
+		D3C83DDB2069A06C00500129 /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
+		D3C83DDC2069A06C00500129 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C83DDF2069A06C00500129 /* AppCenterDistribute.framework in Frameworks */,
+				D3C83DE02069A06C00500129 /* AppCenterPush.framework in Frameworks */,
+				D3C83DDD2069A06C00500129 /* AppCenterAnalytics.framework in Frameworks */,
+				D3C83DDE2069A06C00500129 /* AppCenter.framework in Frameworks */,
+				D3C83DE22069A06C00500129 /* AppCenterCrashes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,7 @@
 		D3048F1B202E2B2D00D45D7E = {
 			isa = PBXGroup;
 			children = (
+				D3C83DD62069A02C00500129 /* AppCenter */,
 				D3048F26202E2B2D00D45D7E /* Minutes */,
 				D3048F25202E2B2D00D45D7E /* Products */,
 			);
@@ -71,6 +89,19 @@
 				D3AA8CFE2037552800222B39 /* FileEntryStore.swift */,
 			);
 			path = Minutes;
+			sourceTree = "<group>";
+		};
+		D3C83DD62069A02C00500129 /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				D3C83DD82069A06C00500129 /* AppCenter.framework */,
+				D3C83DD72069A06C00500129 /* AppCenterAnalytics.framework */,
+				D3C83DDC2069A06C00500129 /* AppCenterCrashes.framework */,
+				D3C83DD92069A06C00500129 /* AppCenterDistribute.framework */,
+				D3C83DDB2069A06C00500129 /* AppCenterDistributeResources.bundle */,
+				D3C83DDA2069A06C00500129 /* AppCenterPush.framework */,
+			);
+			path = AppCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +166,7 @@
 				D3048F32202E2B2D00D45D7E /* LaunchScreen.storyboard in Resources */,
 				D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */,
 				D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */,
+				D3C83DE12069A06C00500129 /* AppCenterDistributeResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +319,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y85BWF2ZV2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppCenter",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
@@ -302,7 +339,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				DEVELOPMENT_TEAM = Y85BWF2ZV2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppCenter",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
